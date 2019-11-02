@@ -9,9 +9,12 @@ response = requests.get(url, headers=headers)
 
 soup = BeautifulSoup(response.text, "html.parser")
 
+games = soup.find_all("div", {"class":"product_wrap"})[:-3]
+
 # titles = soup.find_all("div", {"class":"basic_stat product_title"})
-titles = soup.select("div.basic_stat.product_title > a")
+# titles = soup.select("div.basic_stat.product_title > a")
 
-for title in titles:
-    print(title.text)
+# for title in titles:
+#     print(title.text)
 
+print(games[-1])
