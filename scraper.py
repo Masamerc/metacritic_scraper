@@ -16,17 +16,20 @@ games = soup.find_all("div", {"class":"product_wrap"})[:-3]
 game_data = []
 for game in games:
      title = game.find("div", {"class":"basic_stat product_title"})
+
      for tag in game.find_all("li", {"class":"stat release_date"}):
           release_date = tag.find("span", {"class":"data"})
-
+     
+     critic_score = game.find_all("div", {"class":"basic_stat product_score brief_metascore"})[0]
+     user_score = game.find_all("span")[1]
      pair = {
           "title":title.text.strip(),
-          "release_date":release_date.text.strip()
+          "release_date":release_date.text.strip(),
+          "critic_score":critic_score.text.strip(),
+          "user_score":user_score.text.strip()
      }
      game_data.append(pair)
 
-# for title in titles:
-#     print(title.text)
 
 with open("data.json", "w") as f:
      json.dump(game_data, f, indent=2)
