@@ -13,7 +13,7 @@ This project can be divided into 3 sections.
 3. sending an email with some statistics derived from the data
 
 
-## Instructions
+## Instructions for Users
 ---
 
 ```python
@@ -25,6 +25,12 @@ class DataHelper:
 
 ## Breakdown of the Project
 ---
+
 //ETL description
+
+**Send Email with Some Game Score Insights & Statistics**
+
+// attach example email
+
 
 
