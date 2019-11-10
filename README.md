@@ -1,6 +1,6 @@
 # metacritic_scraper
 
-A web-scraping project which aims to scrape game score data from metacritic.com, perform ETL and output some statistics about game scores.
+A web-scraping project which aims to scrape game score data from [metacritic.com](https://www.metacritic.com/), perform ETL and output some statistics about game scores.
 
 ![](metacritic.png)
 
