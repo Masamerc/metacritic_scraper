@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import json
 from datetime import datetime
+import datetime as dt
 
 
 class DataHelper:
@@ -19,10 +20,12 @@ class DataHelper:
     
 
     @classmethod
-    def get_complete_data(self, data):
+    def get_complete_data(self, data, save_csv=False):
         data_complete = data.dropna(subset=["critic_score", "user_score"]).copy()
         data_complete["combined_score"] = data_complete["user_score"] + data_complete["critic_score"]
         data_complete["score_gap"] = (data_complete["user_score"] * 10) - data_complete["critic_score"]
+        if save_csv==True:
+            data_complete.to_csv("./out_csv_files/output_"+ str(dt.date.today()) +".csv", index=False)
         return data_complete
 
 
