@@ -43,7 +43,7 @@ with open("data.json", "w") as f:
 dh = DataHelper
 
 test_data = dh.load_and_clean()
-complete_data = dh.get_complete_data(test_data)
+complete_data = dh.get_complete_data(test_data, save_csv=False)
 
 o_best = dh.store_overall_best(complete_data)
 u_best = dh.store_users_best(complete_data)
