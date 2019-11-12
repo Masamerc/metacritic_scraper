@@ -1,4 +1,0 @@
-beautifulsoup4            4.6.3                    py37_0    
-numpy                     1.15.4           py37h19fb1c0_0  
-pandas                    0.23.4           py37h830ac7b_0  
-python                    3.7.1                h8c8aaf0_6  
