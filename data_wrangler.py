@@ -6,21 +6,20 @@ import datetime as dt
 
 
 class DataHelper:
-
-    @classmethod
-    def load_and_clean(self):
+    @staticmethod
+    def load_and_clean():
         with open("data.json", "r") as f:
             raw_json= json.load(f)
-            self.data = pd.DataFrame(raw_json)
-            self.data.replace("tbd", np.nan, inplace=True)
-            self.data.release_date = self.data.release_date.apply(lambda x: datetime.strptime(x, "%b %d"))
-            self.data["user_score"] = self.data["user_score"].astype(float)
-            self.data["critic_score"] = self.data["critic_score"].astype(float)
-            return self.data
+            data = pd.DataFrame(raw_json)
+            data.replace("tbd", np.nan, inplace=True)
+            data.release_date = data.release_date.apply(lambda x: datetime.strptime(x, "%b %d"))
+            data["user_score"] = data["user_score"].astype(float)
+            data["critic_score"] = data["critic_score"].astype(float)
+            return data
     
 
-    @classmethod
-    def get_complete_data(self, data, save_csv=False):
+    @staticmethod
+    def get_complete_data(data, save_csv=False):
         data_complete = data.dropna(subset=["critic_score", "user_score"]).copy()
         data_complete["combined_score"] = data_complete["user_score"] + data_complete["critic_score"]
         data_complete["score_gap"] = (data_complete["user_score"] * 10) - data_complete["critic_score"]
@@ -29,8 +28,8 @@ class DataHelper:
         return data_complete
 
 
-    @classmethod
-    def store_overall_best(self, data_complete):
+    @staticmethod
+    def store_overall_best(data_complete):
         best_10 = data_complete.sort_values("combined_score", ascending=False)[:10]
         overal_bests = f"""
             This time around, the No.1 overall best game is...
@@ -65,8 +64,8 @@ class DataHelper:
         return overal_bests
 
 
-    @classmethod
-    def store_critic_best(self, data_complete):
+    @staticmethod
+    def store_critic_best(data_complete):
         critic_10 = data_complete.sort_values("critic_score", ascending=False)[:10]
         critic_bests = f"""
             This time around, the No.1 critcs' favorite game is...
@@ -96,8 +95,8 @@ class DataHelper:
         return critic_bests
 
 
-    @classmethod
-    def store_users_best(self, data_complete):
+    @staticmethod
+    def store_users_best(data_complete):
         users_10 = data_complete.sort_values("user_score", ascending=False)[:10]
         users_bests = f"""
             This time around, the No.1 users' favorite game is...
@@ -127,8 +126,8 @@ class DataHelper:
         return users_bests
 
 
-    @classmethod
-    def store_controverial_good(self, data_complete):
+    @staticmethod
+    def store_controverial_good(data_complete):
         turnout_good = data_complete.sort_values("score_gap", ascending=False)[:10]
         controversial_good = f"""
             This time around, the No.1 controversial but actually good game is
@@ -161,8 +160,8 @@ class DataHelper:
         return controversial_good
 
 
-    @classmethod
-    def store_controverial_bad(self, data_complete):
+    @staticmethod
+    def store_controverial_bad(data_complete):
         turnout_bad = data_complete.sort_values("score_gap", ascending=True)[:10]
         controversial_bad = f"""
             This time around, the No.1 controversial but actually bad game is
