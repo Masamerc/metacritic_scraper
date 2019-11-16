@@ -1,0 +1,135 @@
+   This time around, the No.1 overall best game is...
+
+            'Frostpunk: Console Edition'
+            with user_score = 7.4
+            and critic_score = 87.0
+            Overall score = 94.4
+
+            Followed by:
+
+            No.2 'The Outer Worlds',
+                user_score = 8.3
+                citic_score = 86.0
+                Overall score = 94.4
+
+            No.3 'Ni no Kuni: Wrath of the White Witch Remastered',
+                user_score = 7.8
+                citic_score = 86.0
+                Overall score = 94.4
+
+            No.4 'Star Wars Jedi: Fallen Order',
+                user_score = 8.3
+                citic_score = 84.0
+                Overall score = 94.4
+
+            No.5 'The Legend of Heroes: Trails of Cold Steel III',
+                user_score = 8.6
+                citic_score = 82.0
+                Overall score = 94.4
+            -----------------------------------------------------------------
+
+            This time around, the No.1 users' favorite game is...
+
+            'The Legend of Heroes: Trails of Cold Steel III'
+            with user_score = 8.6
+            and critic_score = 82.0
+
+            Followed by:
+
+            No.2 'Concrete Genie',
+                user_score = 8.4
+                citic_score = 75.0
+
+            No.3 'Star Wars Jedi: Fallen Order',
+                user_score = 8.3
+                citic_score = 84.0
+
+            No.4 'The Outer Worlds',
+                user_score = 8.3
+                citic_score = 86.0
+
+            No.5 'MediEvil',
+                user_score = 8.3
+                citic_score = 67.0
+            -----------------------------------------------------------------
+
+            This time around, the No.1 critcs' favorite game is...
+
+            'Frostpunk: Console Edition'
+            with user_score = 7.4
+            and critic_score = 87.0
+
+            Followed by:
+
+            No.2 'The Outer Worlds',
+                user_score = 8.3
+                citic_score = 86.0
+
+            No.3 'Ni no Kuni: Wrath of the White Witch Remastered',
+                user_score = 7.8
+                citic_score = 86.0
+
+            No.4 'Star Wars Jedi: Fallen Order',
+                user_score = 8.3
+                citic_score = 84.0
+
+            No.5 'Sayonara Wild Hearts',
+                user_score = 5.2
+                citic_score = 84.0
+            -----------------------------------------------------------------
+
+            This time around, the No.1 controversial but actually good game is
+            'Zombieland: Double Tap - Road Trip'
+            with adjusted user_score = 60.0
+            and critic_score = 41.0
+            Score gap is 19.0
+
+            Followed by:
+            No.2 'ReadySet Heroes',
+                adjusted user_score = 70.0
+                citic_score = 52.0
+                Score gap is 18.0
+
+            No.3 'MediEvil',
+                adjusted user_score = 83.0
+                citic_score = 67.0
+                Score gap is 16.0
+
+            No.4 'Concrete Genie',
+                adjusted user_score = 84.0
+                citic_score = 75.0
+                Score gap is 9.0
+
+            No.5 'Code Vein',
+                adjusted user_score = 60.0
+                citic_score = 70.0
+                Score gap is 9.0
+            -----------------------------------------------------------------
+
+            This time around, the No.1 controversial but actually bad game is
+            'FIFA 20'
+            with adjusted user_score = 11.0
+            and critic_score = 79.0
+            Score gap is -68.0
+
+            Followed by:
+            No.2 'Lonely Mountains: Downhill',
+                adjusted user_score = 17.0
+                citic_score = 80.0
+                Score gap is -63.0
+
+            No.3 'Call of Duty: Modern Warfare',
+                adjusted user_score = 32.0
+                citic_score = 81.0
+                Score gap is -49.0
+
+            No.4 'A Knight's Quest',
+                adjusted user_score = 24.0
+                citic_score = 68.0
+                Score gap is -44.0
+
+            No.5 'The Alliance Alive HD Remastered',
+                adjusted user_score = 41.0
+                citic_score = 75.0
+                Score gap is -34.0
+            -----------------------------------------------------------------

@@ -51,7 +51,7 @@ contr_bad = dh.store_controverial_bad(complete_data)
 
 
 # prompt the user to put email address to send email to
-to_address = input("Please type the email address that recieves this email: ")
+to_address = input("Please enter the email address to send this email to:  ")
 
 send_email(subject=f"Metacritic Scraper {datetime.date.today()}", content=o_best + "\n" + u_best\
           + "\n" + c_best + "\n" + contr_good + "\n" + contr_bad, to_address=to_address)

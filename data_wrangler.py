@@ -27,9 +27,10 @@ class DataHelper:
     
 
     @staticmethod
-    def get_complete_data(data, save_csv=False):
+    def get_complete_data(data, save_csv=True):
         """
-        perform a serires of data cleaning & feaure engineering then return the complete data as pandas dataframe
+        perform a serires of data cleaning & feaure engineering then return the complete data as pandas dataframe.
+        if argument save_csv == True, data will be saved as a csv file in out_csv_files directory.
         """
         data_complete = data.dropna(subset=["critic_score", "user_score"]).copy()
         data_complete["combined_score"] = data_complete["user_score"] + data_complete["critic_score"]
