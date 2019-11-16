@@ -6,8 +6,15 @@ import datetime as dt
 
 
 class DataHelper:
+    """
+    provide a number of methods that handle the data and create strings to be used for email 
+    """
+
     @staticmethod
     def load_and_clean():
+        """
+        load the scraped JSON data and return pandas dataframe 
+        """
         with open("data.json", "r") as f:
             raw_json= json.load(f)
             data = pd.DataFrame(raw_json)
@@ -21,6 +28,9 @@ class DataHelper:
 
     @staticmethod
     def get_complete_data(data, save_csv=False):
+        """
+        perform a serires of data cleaning & feaure engineering then return the complete data as pandas dataframe
+        """
         data_complete = data.dropna(subset=["critic_score", "user_score"]).copy()
         data_complete["combined_score"] = data_complete["user_score"] + data_complete["critic_score"]
         data_complete["score_gap"] = (data_complete["user_score"] * 10) - data_complete["critic_score"]
@@ -31,6 +41,10 @@ class DataHelper:
 
     @staticmethod
     def store_overall_best(data_complete):
+        """
+        return a string that shows the overall top 5 highest-scored games 
+        """
+
         best_10 = data_complete.sort_values("combined_score", ascending=False)[:10]
         overal_bests = f"""
             This time around, the No.1 overall best game is...
@@ -67,6 +81,10 @@ class DataHelper:
 
     @staticmethod
     def store_critic_best(data_complete):
+        """
+        return a string that shows the top 5 games reviewed by critics 
+        """
+
         critic_10 = data_complete.sort_values("critic_score", ascending=False)[:10]
         critic_bests = f"""
             This time around, the No.1 critcs' favorite game is...
@@ -98,6 +116,10 @@ class DataHelper:
 
     @staticmethod
     def store_users_best(data_complete):
+        """
+        return a string that shows the top 5 games reviewed by users 
+        """
+        
         users_10 = data_complete.sort_values("user_score", ascending=False)[:10]
         users_bests = f"""
             This time around, the No.1 users' favorite game is...
@@ -129,6 +151,11 @@ class DataHelper:
 
     @staticmethod
     def store_controverial_good(data_complete):
+        """
+        return a string that shows the top 5 games with the biggest gaps between critic score and user score.
+        in particular ones with biggest posiive gaps between the two.(i.e. low critic score, high user score) 
+        """
+        
         turnout_good = data_complete.sort_values("score_gap", ascending=False)[:10]
         controversial_good = f"""
             This time around, the No.1 controversial but actually good game is
@@ -163,6 +190,11 @@ class DataHelper:
 
     @staticmethod
     def store_controverial_bad(data_complete):
+        """
+        return a string that shows the top 5 games with the biggest gaps between critic score and user score.
+        in particular the ones with biggest negative gaps between the two.(i.e. high critic score, low user score) 
+        """
+
         turnout_bad = data_complete.sort_values("score_gap", ascending=True)[:10]
         controversial_bad = f"""
             This time around, the No.1 controversial but actually bad game is
@@ -193,7 +225,3 @@ class DataHelper:
                 Score gap is {turnout_bad.iloc[4].score_gap}
             """ + '-'*65
         return controversial_bad
-
-    
-
-    
