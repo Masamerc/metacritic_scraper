@@ -13,6 +13,7 @@ class DataHelper:
             data = pd.DataFrame(raw_json)
             data.replace("tbd", np.nan, inplace=True)
             data.release_date = data.release_date.apply(lambda x: datetime.strptime(x, "%b %d"))
+            data.release_date = data.release_date.dt.strftime("%m/%d")
             data["user_score"] = data["user_score"].astype(float)
             data["critic_score"] = data["critic_score"].astype(float)
             return data
@@ -34,29 +35,29 @@ class DataHelper:
         overal_bests = f"""
             This time around, the No.1 overall best game is...
 
-            '{best_10.iloc[0].title}'
+            '{best_10.iloc[0].title}' - Released: {best_10.iloc[0].release_date}
             with user_score = {best_10.iloc[0].user_score}
             and critic_score = {best_10.iloc[0].critic_score}
             Overall score = {best_10.iloc[0].combined_score}
 
             Followed by:
 
-            No.2 '{best_10.iloc[1].title}',
+            No.2 '{best_10.iloc[1].title}' - Released: {best_10.iloc[1].release_date}
                 user_score = {best_10.iloc[1].user_score}
                 citic_score = {best_10.iloc[1].critic_score}
                 Overall score = {best_10.iloc[0].combined_score}
 
-            No.3 '{best_10.iloc[2].title}',
+            No.3 '{best_10.iloc[2].title}' - Released: {best_10.iloc[2].release_date}
                 user_score = {best_10.iloc[2].user_score}
                 citic_score = {best_10.iloc[2].critic_score}
                 Overall score = {best_10.iloc[0].combined_score}
 
-            No.4 '{best_10.iloc[3].title}',
+            No.4 '{best_10.iloc[3].title}' - Released: {best_10.iloc[3].release_date}
                 user_score = {best_10.iloc[3].user_score}
                 citic_score = {best_10.iloc[3].critic_score}
                 Overall score = {best_10.iloc[0].combined_score}
 
-            No.5 '{best_10.iloc[4].title}',
+            No.5 '{best_10.iloc[4].title}' - Released: {best_10.iloc[4].release_date}
                 user_score = {best_10.iloc[4].user_score}
                 citic_score = {best_10.iloc[4].critic_score} 
                 Overall score = {best_10.iloc[0].combined_score}
@@ -70,25 +71,25 @@ class DataHelper:
         critic_bests = f"""
             This time around, the No.1 critcs' favorite game is...
 
-            '{critic_10.iloc[0].title}'
+            '{critic_10.iloc[0].title}' - Released: {critic_10.iloc[0].release_date}
             with user_score = {critic_10.iloc[0].user_score}
             and critic_score = {critic_10.iloc[0].critic_score}
   
             Followed by:
 
-            No.2 '{critic_10.iloc[1].title}',
+            No.2 '{critic_10.iloc[1].title}' - Released: {critic_10.iloc[1].release_date}
                 user_score = {critic_10.iloc[1].user_score}
                 citic_score = {critic_10.iloc[1].critic_score}
      
-            No.3 '{critic_10.iloc[2].title}',
+            No.3 '{critic_10.iloc[2].title}' - Released: {critic_10.iloc[2].release_date}
                 user_score = {critic_10.iloc[2].user_score}
                 citic_score = {critic_10.iloc[2].critic_score}
         
-            No.4 '{critic_10.iloc[3].title}',
+            No.4 '{critic_10.iloc[3].title}' - Released: {critic_10.iloc[3].release_date}
                 user_score = {critic_10.iloc[3].user_score}
                 citic_score = {critic_10.iloc[3].critic_score}
   
-            No.5 '{critic_10.iloc[4].title}',
+            No.5 '{critic_10.iloc[4].title}' - Released: {critic_10.iloc[4].release_date}
                 user_score = {critic_10.iloc[4].user_score}
                 citic_score = {critic_10.iloc[4].critic_score} 
             """ + '-'*65
@@ -101,25 +102,25 @@ class DataHelper:
         users_bests = f"""
             This time around, the No.1 users' favorite game is...
 
-            '{users_10.iloc[0].title}'
+            '{users_10.iloc[0].title}' - Released: {users_10.iloc[0].release_date}
             with user_score = {users_10.iloc[0].user_score}
             and critic_score = {users_10.iloc[0].critic_score}
   
             Followed by:
 
-            No.2 '{users_10.iloc[1].title}',
+            No.2 '{users_10.iloc[1].title}' - Released: {users_10.iloc[1].release_date}
                 user_score = {users_10.iloc[1].user_score}
                 citic_score = {users_10.iloc[1].critic_score}
      
-            No.3 '{users_10.iloc[2].title}',
+            No.3 '{users_10.iloc[2].title}' - Released: {users_10.iloc[2].release_date}
                 user_score = {users_10.iloc[2].user_score}
                 citic_score = {users_10.iloc[2].critic_score}
         
-            No.4 '{users_10.iloc[3].title}',
+            No.4 '{users_10.iloc[3].title}' - Released: {users_10.iloc[3].release_date}
                 user_score = {users_10.iloc[3].user_score}
                 citic_score = {users_10.iloc[3].critic_score}
   
-            No.5 '{users_10.iloc[4].title}',
+            No.5 '{users_10.iloc[4].title}' - Released: {users_10.iloc[4].release_date}
                 user_score = {users_10.iloc[4].user_score}
                 citic_score = {users_10.iloc[4].critic_score} 
             """ + '-'*65
@@ -131,28 +132,28 @@ class DataHelper:
         turnout_good = data_complete.sort_values("score_gap", ascending=False)[:10]
         controversial_good = f"""
             This time around, the No.1 controversial but actually good game is
-            '{turnout_good.iloc[0].title}'
+            '{turnout_good.iloc[0].title}' - Released: {turnout_good.iloc[4].release_date}
             with adjusted user_score = {turnout_good.iloc[0].user_score*10}
             and critic_score = {turnout_good.iloc[0].critic_score}
             Score gap is {turnout_good.iloc[0].score_gap}
             
             Followed by:
-            No.2 '{turnout_good.iloc[1].title}',
+            No.2 '{turnout_good.iloc[1].title}' - Released: {turnout_good.iloc[4].release_date}
                 adjusted user_score = {turnout_good.iloc[1].user_score*10}
                 citic_score = {turnout_good.iloc[1].critic_score}
                 Score gap is {turnout_good.iloc[1].score_gap}
             
-            No.3 '{turnout_good.iloc[2].title}',
+            No.3 '{turnout_good.iloc[2].title}' - Released: {turnout_good.iloc[4].release_date}
                 adjusted user_score = {turnout_good.iloc[2].user_score*10}
                 citic_score = {turnout_good.iloc[2].critic_score}
                 Score gap is {turnout_good.iloc[2].score_gap}
                 
-            No.4 '{turnout_good.iloc[3].title}',
+            No.4 '{turnout_good.iloc[3].title}' - Released: {turnout_good.iloc[4].release_date}
                 adjusted user_score = {turnout_good.iloc[3].user_score*10}
                 citic_score = {turnout_good.iloc[3].critic_score}
                 Score gap is {turnout_good.iloc[3].score_gap}
                 
-            No.5 '{turnout_good.iloc[4].title}',
+            No.5 '{turnout_good.iloc[4].title}' - Released: {turnout_good.iloc[4].release_date}
                 adjusted user_score = {turnout_good.iloc[0].user_score*10}
                 citic_score = {turnout_good.iloc[4].critic_score}
                 Score gap is {turnout_good.iloc[4].score_gap}
@@ -165,28 +166,28 @@ class DataHelper:
         turnout_bad = data_complete.sort_values("score_gap", ascending=True)[:10]
         controversial_bad = f"""
             This time around, the No.1 controversial but actually bad game is
-            '{turnout_bad.iloc[0].title}'
+            '{turnout_bad.iloc[0].title}' - Released: {turnout_bad.iloc[4].release_date}
             with adjusted user_score = {turnout_bad.iloc[0].user_score*10}
             and critic_score = {turnout_bad.iloc[0].critic_score}
             Score gap is {turnout_bad.iloc[0].score_gap}
 
             Followed by:
-            No.2 '{turnout_bad.iloc[1].title}',
+            No.2 '{turnout_bad.iloc[1].title}' - Released: {turnout_bad.iloc[4].release_date}
                 adjusted user_score = {turnout_bad.iloc[1].user_score*10}
                 citic_score = {turnout_bad.iloc[1].critic_score}
                 Score gap is {turnout_bad.iloc[1].score_gap}
 
-            No.3 '{turnout_bad.iloc[2].title}',
+            No.3 '{turnout_bad.iloc[2].title}' - Released: {turnout_bad.iloc[4].release_date}
                 adjusted user_score = {turnout_bad.iloc[2].user_score*10}
                 citic_score = {turnout_bad.iloc[2].critic_score}
                 Score gap is {turnout_bad.iloc[2].score_gap}
 
-            No.4 '{turnout_bad.iloc[3].title}',
+            No.4 '{turnout_bad.iloc[3].title}' - Released: {turnout_bad.iloc[4].release_date}
                 adjusted user_score = {turnout_bad.iloc[3].user_score*10}
                 citic_score = {turnout_bad.iloc[3].critic_score}
                 Score gap is {turnout_bad.iloc[3].score_gap}
 
-            No.5 '{turnout_bad.iloc[4].title}',
+            No.5 '{turnout_bad.iloc[4].title}' - Released: {turnout_bad.iloc[4].release_date}
                 adjusted user_score = {turnout_bad.iloc[4].user_score*10}
                 citic_score = {turnout_bad.iloc[4].critic_score}
                 Score gap is {turnout_bad.iloc[4].score_gap}

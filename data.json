@@ -1,15 +1,135 @@
 [
   {
+    "title": "Golem",
+    "release_date": "Nov 15",
+    "critic_score": "tbd",
+    "user_score": "7.4"
+  },
+  {
+    "title": "Star Wars Jedi: Fallen Order",
+    "release_date": "Nov 15",
+    "critic_score": "84",
+    "user_score": "8.3"
+  },
+  {
+    "title": "Tokyo Ghoul: re Call to Exist",
+    "release_date": "Nov 15",
+    "critic_score": "tbd",
+    "user_score": "8.0"
+  },
+  {
+    "title": "ASTRONEER",
+    "release_date": "Nov 15",
+    "critic_score": "tbd",
+    "user_score": "tbd"
+  },
+  {
+    "title": "Woven",
+    "release_date": "Nov 15",
+    "critic_score": "tbd",
+    "user_score": "7.3"
+  },
+  {
+    "title": "Sparklite",
+    "release_date": "Nov 14",
+    "critic_score": "74",
+    "user_score": "4.4"
+  },
+  {
+    "title": "Fractured Minds",
+    "release_date": "Nov 14",
+    "critic_score": "tbd",
+    "user_score": "tbd"
+  },
+  {
+    "title": "Kitten'd",
+    "release_date": "Nov 14",
+    "critic_score": "tbd",
+    "user_score": "tbd"
+  },
+  {
+    "title": "Mad Games Tycoon",
+    "release_date": "Nov 14",
+    "critic_score": "tbd",
+    "user_score": "tbd"
+  },
+  {
+    "title": "Last Labyrinth",
+    "release_date": "Nov 13",
+    "critic_score": "tbd",
+    "user_score": "tbd"
+  },
+  {
+    "title": "Bee Simulator",
+    "release_date": "Nov 12",
+    "critic_score": "tbd",
+    "user_score": "7.5"
+  },
+  {
+    "title": "Neverwinter Nights: Enhanced Edition",
+    "release_date": "Nov 12",
+    "critic_score": "tbd",
+    "user_score": "tbd"
+  },
+  {
+    "title": "Doctor Who: The Edge Of Time",
+    "release_date": "Nov 12",
+    "critic_score": "tbd",
+    "user_score": "tbd"
+  },
+  {
+    "title": "VR Ping Pong Pro",
+    "release_date": "Nov 12",
+    "critic_score": "tbd",
+    "user_score": "tbd"
+  },
+  {
+    "title": "Yaga",
+    "release_date": "Nov 12",
+    "critic_score": "tbd",
+    "user_score": "5.2"
+  },
+  {
+    "title": "Bridge Constructor Portal: Portal Proficiency",
+    "release_date": "Nov 12",
+    "critic_score": "tbd",
+    "user_score": "tbd"
+  },
+  {
+    "title": "Contagion VR: Outbreak",
+    "release_date": "Nov 12",
+    "critic_score": "tbd",
+    "user_score": "tbd"
+  },
+  {
+    "title": "Cities: Skylines - Parklife Edition",
+    "release_date": "Nov 12",
+    "critic_score": "tbd",
+    "user_score": "tbd"
+  },
+  {
+    "title": "Scarlett Mysteries: Cursed Child",
+    "release_date": "Nov 12",
+    "critic_score": "tbd",
+    "user_score": "tbd"
+  },
+  {
+    "title": "Romancing SaGa 3",
+    "release_date": "Nov 11",
+    "critic_score": "tbd",
+    "user_score": "4.9"
+  },
+  {
     "title": "Death Stranding",
     "release_date": "Nov  8",
     "critic_score": "83",
-    "user_score": "6.9"
+    "user_score": "6.2"
   },
   {
     "title": "Need for Speed Heat",
     "release_date": "Nov  8",
-    "critic_score": "73",
-    "user_score": "6.5"
+    "critic_score": "72",
+    "user_score": "6.6"
   },
   {
     "title": "Stay Cool, Kobayashi-san!: A River City Ransom Story",
@@ -21,7 +141,7 @@
     "title": "Jumanji: The Video Game",
     "release_date": "Nov  8",
     "critic_score": "tbd",
-    "user_score": "0.0"
+    "user_score": "0.8"
   },
   {
     "title": "Police Chase",
@@ -30,10 +150,16 @@
     "user_score": "tbd"
   },
   {
+    "title": "The Sims 4 Plus Island Living Bundle",
+    "release_date": "Nov  8",
+    "critic_score": "tbd",
+    "user_score": "tbd"
+  },
+  {
     "title": "Reborn: A Samurai Awakens",
     "release_date": "Nov  6",
     "critic_score": "tbd",
-    "user_score": "tbd"
+    "user_score": "3.0"
   },
   {
     "title": "Fire Pro Wrestling World: Entrance Craft",
@@ -45,25 +171,19 @@
     "title": "Just Dance 2020",
     "release_date": "Nov  5",
     "critic_score": "tbd",
-    "user_score": "tbd"
-  },
-  {
-    "title": "Hunt: Showdown",
-    "release_date": "Nov  5",
-    "critic_score": "tbd",
-    "user_score": "tbd"
+    "user_score": "3.2"
   },
   {
     "title": "Blacksad: Under the Skin",
     "release_date": "Nov  5",
     "critic_score": "tbd",
-    "user_score": "3.8"
+    "user_score": "4.5"
   },
   {
     "title": "Valfaris",
     "release_date": "Nov  5",
     "critic_score": "76",
-    "user_score": "tbd"
+    "user_score": "5.6"
   },
   {
     "title": "Destiny Connect: Tick-Tock Travelers",
@@ -80,8 +200,8 @@
   {
     "title": "Conception Plus: Maidens of the Twelve Stars",
     "release_date": "Nov  5",
-    "critic_score": "tbd",
-    "user_score": "5.5"
+    "critic_score": "63",
+    "user_score": "4.1"
   },
   {
     "title": "Garfield Kart: Furious Racing",
@@ -141,7 +261,7 @@
     "title": "Citadel: Forged with Fire",
     "release_date": "Nov  1",
     "critic_score": "tbd",
-    "user_score": "5.7"
+    "user_score": "5.3"
   },
   {
     "title": "The Forbidden Arts",
@@ -159,7 +279,7 @@
     "title": "Spirit of the North",
     "release_date": "Nov  1",
     "critic_score": "tbd",
-    "user_score": "7.3"
+    "user_score": "7.9"
   },
   {
     "title": "Voyage of the Dead",
@@ -171,7 +291,7 @@
     "title": "Race with Ryan",
     "release_date": "Nov  1",
     "critic_score": "tbd",
-    "user_score": "3.8"
+    "user_score": "3.5"
   },
   {
     "title": "TwinCop",
@@ -206,8 +326,8 @@
   {
     "title": "Close to the Sun",
     "release_date": "Oct 29",
-    "critic_score": "63",
-    "user_score": "2.6"
+    "critic_score": "66",
+    "user_score": "4.6"
   },
   {
     "title": "Mercenaries Wings: The False Phoenix",
@@ -218,7 +338,7 @@
   {
     "title": "Dusk Diver",
     "release_date": "Oct 29",
-    "critic_score": "tbd",
+    "critic_score": "68",
     "user_score": "tbd"
   },
   {
@@ -231,13 +351,13 @@
     "title": "Afterparty",
     "release_date": "Oct 29",
     "critic_score": "71",
-    "user_score": "5.8"
+    "user_score": "6.1"
   },
   {
     "title": "Disgaea 4 Complete+",
     "release_date": "Oct 29",
     "critic_score": "83",
-    "user_score": "6.0"
+    "user_score": "6.6"
   },
   {
     "title": "Atelier Ryza: Ever Darkness & the Secret Hideout",
@@ -248,7 +368,7 @@
   {
     "title": "Super Monkey Ball: Banana Blitz HD",
     "release_date": "Oct 29",
-    "critic_score": "62",
+    "critic_score": "59",
     "user_score": "6.3"
   },
   {
@@ -261,13 +381,13 @@
     "title": "Yakuza 4 Remastered",
     "release_date": "Oct 29",
     "critic_score": "tbd",
-    "user_score": "6.9"
+    "user_score": "7.2"
   },
   {
     "title": "Disney Classic Games: Aladdin and the Lion King",
     "release_date": "Oct 29",
-    "critic_score": "78",
-    "user_score": "3.8"
+    "critic_score": "79",
+    "user_score": "4.7"
   },
   {
     "title": "Pinball FX3 - Williams Pinball: Universal Monsters",
@@ -369,25 +489,25 @@
     "title": "Cat Quest II",
     "release_date": "Oct 24",
     "critic_score": "78",
-    "user_score": "6.0"
+    "user_score": "6.6"
   },
   {
     "title": "Dark Devotion",
     "release_date": "Oct 24",
-    "critic_score": "tbd",
-    "user_score": "6.0"
+    "critic_score": "70",
+    "user_score": "6.8"
   },
   {
     "title": "Door Kickers: Action Squad",
     "release_date": "Oct 24",
     "critic_score": "78",
-    "user_score": "6.7"
+    "user_score": "7.2"
   },
   {
     "title": "Lonely Mountains: Downhill",
     "release_date": "Oct 23",
     "critic_score": "80",
-    "user_score": "0.0"
+    "user_score": "1.7"
   },
   {
     "title": "Battle Planet: Judgement Day",
@@ -416,8 +536,8 @@
   {
     "title": "The Legend of Heroes: Trails of Cold Steel III",
     "release_date": "Oct 22",
-    "critic_score": "83",
-    "user_score": "8.7"
+    "critic_score": "82",
+    "user_score": "8.6"
   },
   {
     "title": "Raging Loop",
@@ -428,7 +548,7 @@
   {
     "title": "WWE 2K20",
     "release_date": "Oct 22",
-    "critic_score": "42",
+    "critic_score": "43",
     "user_score": "1.5"
   },
   {
@@ -471,7 +591,7 @@
     "title": "PBA Pro Bowling",
     "release_date": "Oct 22",
     "critic_score": "tbd",
-    "user_score": "tbd"
+    "user_score": "5.5"
   },
   {
     "title": "Hitman 2: Whittleton Creek Pack",
@@ -481,6 +601,12 @@
   },
   {
     "title": "Deep Space Rush",
+    "release_date": "Oct 22",
+    "critic_score": "tbd",
+    "user_score": "tbd"
+  },
+  {
+    "title": "Firewall Zero Hour - Operation: Heartland",
     "release_date": "Oct 22",
     "critic_score": "tbd",
     "user_score": "tbd"
@@ -512,8 +638,8 @@
   {
     "title": "Ice Age: Scrat's Nutty Adventure",
     "release_date": "Oct 18",
-    "critic_score": "46",
-    "user_score": "5.3"
+    "critic_score": "55",
+    "user_score": "5.8"
   },
   {
     "title": "Plants vs. Zombies: Battle for Neighborville",
@@ -537,7 +663,7 @@
     "title": "Monkey King: Hero is Back",
     "release_date": "Oct 17",
     "critic_score": "61",
-    "user_score": "6.9"
+    "user_score": "6.8"
   },
   {
     "title": "Felix the Reaper",
@@ -555,7 +681,7 @@
     "title": "Travis Strikes Again: No More Heroes - Complete Edition",
     "release_date": "Oct 17",
     "critic_score": "67",
-    "user_score": "3.0"
+    "user_score": "3.9"
   },
   {
     "title": "Stranded Sails: Explorers of the Cursed Islands",
@@ -608,20 +734,20 @@
   {
     "title": "Children of Morta",
     "release_date": "Oct 15",
-    "critic_score": "78",
-    "user_score": "7.7"
+    "critic_score": "77",
+    "user_score": "7.8"
   },
   {
     "title": "Outer Wilds",
     "release_date": "Oct 15",
     "critic_score": "81",
-    "user_score": "5.8"
+    "user_score": "6.1"
   },
   {
     "title": "Baldur's Gate: Enhanced Edition",
     "release_date": "Oct 15",
     "critic_score": "tbd",
-    "user_score": "tbd"
+    "user_score": "7.3"
   },
   {
     "title": "The Fisherman: Fishing Planet",
@@ -632,26 +758,26 @@
   {
     "title": "Planescape: Torment: Enhanced Edition / Icewind Dale: Enhanced Edition",
     "release_date": "Oct 15",
-    "critic_score": "74",
+    "critic_score": "72",
     "user_score": "tbd"
   },
   {
     "title": "The Ninja Saviors: Return of the Warriors",
     "release_date": "Oct 15",
     "critic_score": "75",
-    "user_score": "5.1"
+    "user_score": "5.7"
   },
   {
     "title": "Baldur's Gate and Baldur's Gate II: Enhanced Editions",
     "release_date": "Oct 15",
     "critic_score": "81",
-    "user_score": "4.6"
+    "user_score": "5.9"
   },
   {
     "title": "Zombieland: Double Tap - Road Trip",
     "release_date": "Oct 15",
     "critic_score": "41",
-    "user_score": "4.0"
+    "user_score": "6.0"
   },
   {
     "title": "The Sims 4: Realm of Magic",
@@ -693,19 +819,19 @@
     "title": "Frostpunk: Console Edition",
     "release_date": "Oct 11",
     "critic_score": "87",
-    "user_score": "7.3"
+    "user_score": "7.4"
   },
   {
     "title": "AeternoBlade II",
     "release_date": "Oct 11",
-    "critic_score": "tbd",
+    "critic_score": "49",
     "user_score": "5.4"
   },
   {
     "title": "GRID",
     "release_date": "Oct 11",
     "critic_score": "73",
-    "user_score": "5.3"
+    "user_score": "5.4"
   },
   {
     "title": "Spirit Hunter: NG",
@@ -758,7 +884,7 @@
   {
     "title": "Indivisible",
     "release_date": "Oct  8",
-    "critic_score": "79",
+    "critic_score": "78",
     "user_score": "6.9"
   },
   {
@@ -771,7 +897,7 @@
     "title": "Trine 4: The Nightmare Prince",
     "release_date": "Oct  8",
     "critic_score": "80",
-    "user_score": "6.9"
+    "user_score": "7.0"
   },
   {
     "title": "Worse Than Death",
@@ -843,7 +969,7 @@
     "title": "Ghostbusters: The Video Game Remastered",
     "release_date": "Oct  4",
     "critic_score": "66",
-    "user_score": "6.2"
+    "user_score": "6.5"
   },
   {
     "title": "LEGRAND LEGACY: Tale of the Fatebounds",
@@ -891,13 +1017,13 @@
     "title": "ReadySet Heroes",
     "release_date": "Oct  1",
     "critic_score": "52",
-    "user_score": "6.8"
+    "user_score": "7.0"
   },
   {
     "title": "Tom Clancy's Ghost Recon: Breakpoint",
     "release_date": "Oct  1",
     "critic_score": "55",
-    "user_score": "2.6"
+    "user_score": "2.7"
   },
   {
     "title": "Destiny 2: Shadowkeep",
@@ -975,7 +1101,7 @@
     "title": "The Surge 2",
     "release_date": "Sep 24",
     "critic_score": "75",
-    "user_score": "6.9"
+    "user_score": "7.0"
   },
   {
     "title": "FIFA 20",
@@ -987,7 +1113,7 @@
     "title": "Contra: Rogue Corps",
     "release_date": "Sep 24",
     "critic_score": "53",
-    "user_score": "4.2"
+    "user_score": "4.5"
   },
   {
     "title": "Hitman 2: Haven Island",
@@ -1017,7 +1143,7 @@
     "title": "Star Wars Jedi Knight II: Jedi Outcast",
     "release_date": "Sep 24",
     "critic_score": "tbd",
-    "user_score": "5.1"
+    "user_score": "6.2"
   },
   {
     "title": "L.A. Noire: The VR Case Files",
@@ -1029,7 +1155,7 @@
     "title": "The Sojourn",
     "release_date": "Sep 20",
     "critic_score": "71",
-    "user_score": "6.5"
+    "user_score": "6.7"
   },
   {
     "title": "Ni no Kuni: Wrath of the White Witch Remastered",
@@ -1058,8 +1184,8 @@
   {
     "title": "Mutazione",
     "release_date": "Sep 19",
-    "critic_score": "76",
-    "user_score": "6.8"
+    "critic_score": "77",
+    "user_score": "7.0"
   },
   {
     "title": "Overland",
@@ -1072,131 +1198,5 @@
     "release_date": "Sep 19",
     "critic_score": "84",
     "user_score": "5.2"
-  },
-  {
-    "title": "Inferno 2",
-    "release_date": "Sep 19",
-    "critic_score": "tbd",
-    "user_score": "tbd"
-  },
-  {
-    "title": "Lost Castle",
-    "release_date": "Sep 19",
-    "critic_score": "tbd",
-    "user_score": "tbd"
-  },
-  {
-    "title": "Arcade Archives: Time Tunnel",
-    "release_date": "Sep 19",
-    "critic_score": "tbd",
-    "user_score": "tbd"
-  },
-  {
-    "title": "Castle Crashers Remastered",
-    "release_date": "Sep 17",
-    "critic_score": "tbd",
-    "user_score": "tbd"
-  },
-  {
-    "title": "AI: The Somnium Files",
-    "release_date": "Sep 17",
-    "critic_score": "80",
-    "user_score": "7.4"
-  },
-  {
-    "title": "Groundhog Day: Like Father Like Son",
-    "release_date": "Sep 17",
-    "critic_score": "62",
-    "user_score": "5.0"
-  },
-  {
-    "title": "Witching Tower VR",
-    "release_date": "Sep 17",
-    "critic_score": "tbd",
-    "user_score": "tbd"
-  },
-  {
-    "title": "Dead by Daylight: Stranger Things",
-    "release_date": "Sep 17",
-    "critic_score": "tbd",
-    "user_score": "tbd"
-  },
-  {
-    "title": "Rebel Cops",
-    "release_date": "Sep 17",
-    "critic_score": "59",
-    "user_score": "tbd"
-  },
-  {
-    "title": "Samurai Shodown: Shizumaru Hisame",
-    "release_date": "Sep 17",
-    "critic_score": "tbd",
-    "user_score": "tbd"
-  },
-  {
-    "title": "Gnomes Garden: The Lost King",
-    "release_date": "Sep 17",
-    "critic_score": "tbd",
-    "user_score": "tbd"
-  },
-  {
-    "title": "Scheming Through The Zombie Apocalypse: The Beginning",
-    "release_date": "Sep 17",
-    "critic_score": "tbd",
-    "user_score": "tbd"
-  },
-  {
-    "title": "Massira",
-    "release_date": "Sep 16",
-    "critic_score": "60",
-    "user_score": "5.5"
-  },
-  {
-    "title": "Mowin' & Throwin'",
-    "release_date": "Sep 16",
-    "critic_score": "tbd",
-    "user_score": "tbd"
-  },
-  {
-    "title": "Borderlands 3",
-    "release_date": "Sep 13",
-    "critic_score": "78",
-    "user_score": "5.6"
-  },
-  {
-    "title": "Ellen",
-    "release_date": "Sep 13",
-    "critic_score": "tbd",
-    "user_score": "tbd"
-  },
-  {
-    "title": "ShellShock Live",
-    "release_date": "Sep 13",
-    "critic_score": "tbd",
-    "user_score": "tbd"
-  },
-  {
-    "title": "Nextgen Sandbox",
-    "release_date": "Sep 13",
-    "critic_score": "tbd",
-    "user_score": "2.3"
-  },
-  {
-    "title": "Psychotic's Agatha Knife",
-    "release_date": "Sep 12",
-    "critic_score": "tbd",
-    "user_score": "tbd"
-  },
-  {
-    "title": "Super Dodgeball Beats",
-    "release_date": "Sep 12",
-    "critic_score": "tbd",
-    "user_score": "tbd"
-  },
-  {
-    "title": "Overcooked! 2: Carnival of Chaos",
-    "release_date": "Sep 12",
-    "critic_score": "tbd",
-    "user_score": "tbd"
   }
 ]

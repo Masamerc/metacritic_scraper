@@ -2,7 +2,7 @@
 
 A web-scraping project which aims to scrape game score data from [metacritic.com](https://www.metacritic.com/), perform ETL and output some statistics about game scores.
 
-![](metacritic.png)
+![](ms_logo.png)
 
 For this project, the goal is to collect data on [upcoming & recently released PS4 games](https://www.metacritic.com/browse/games/release-date/available/ps4/date). 
 

@@ -16,4 +16,5 @@ contr_bad = dh.store_controverial_bad(complete_data)
 # send_email(subject=f"Metacritic Scraper {datetime.date.today()}", content=o_best + "\n" + u_best\
 #     + "\n" + c_best + "\n" + contr_good + "\n" + contr_bad)
 
+
 print(contr_bad)
