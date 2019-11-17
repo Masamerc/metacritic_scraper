@@ -4,11 +4,11 @@ import os
 
 def send_email(subject, content, to_address):
   """
-  set paameters required for sending  email
+  set parameters required for sending email
   """
 
-  login_pass = os.environ.get("GMAILPASS")
   login_email = os.environ.get("GMAIL")
+  login_pass = os.environ.get("GMAILPASS")
   msg = EmailMessage()
   msg['From'] = login_email
   msg['To'] = to_address
