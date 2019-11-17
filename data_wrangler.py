@@ -153,7 +153,7 @@ class DataHelper:
     @staticmethod
     def store_controverial_good(data_complete):
         """
-        return a string that shows the top 5 games with the biggest gaps between critic score and user score.
+        return a string that shows the top 5 most controversial games with the biggest gaps between critic score and user score.
         in particular ones with biggest posiive gaps between the two.(i.e. low critic score, high user score) 
         """
         
@@ -192,7 +192,7 @@ class DataHelper:
     @staticmethod
     def store_controverial_bad(data_complete):
         """
-        return a string that shows the top 5 games with the biggest gaps between critic score and user score.
+        return a string that shows the top 5 most controversial games with the biggest gaps between critic score and user score.
         in particular the ones with biggest negative gaps between the two.(i.e. high critic score, low user score) 
         """
 

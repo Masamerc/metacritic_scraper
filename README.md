@@ -62,17 +62,44 @@ Now check your gmail you specified when setting up the environment variable GMAI
 Also you should be able to find a csv file with the same data in out_csv_file folder. 
 
 
-
+<br>
 
 
 ## Breakdown of the Project
 ---
 
-//ETL description
+## 1. Data Extraction (```scraper.py```)
+As detailed in the top of this documentation, the extracted data is taken from  metacritic.com. The script utilizes the beautifulsoup4 library to target the specific HTML elements on the page: 
+- title
+- release date
+- user score
+- critic score
 
-**Send Email with Some Game Score Insights & Statistics**
+and stores them in JSON file which will be passed on to ```data_wrangler.py``` script, which cleans and transforms the data into some meaningful information returned as strings.
+Those strings will be then injected into ```send_email``` fucntion imported from ```email_data.py``` and will be sent to specified email address.
 
-// attach example email
+##  2. Data Cleaning and Transformation (```data_wrangler.py```)
+
+Data wrangling process is done within ```data_wrangler.py``` script, which has a class **DataHelper** with following methods:
+- load_and_clean(): loads the scraped JSON data and returns cleaned dataframe
+
+- get_complete_data(): performs a serires of data cleaning & feaure engineering then returns the complete data as pandas dataframe. if argument save_csv == True, data will be saved as a csv file in out_csv_files directory.
+
+- store_overall_best(): returns top 5 overall best videogames with details
+
+- store_critic_best(): returns top 5 best videogames with details reviewed by critics
+
+- store_user_best(): returns top 5 best videogames reviewed by users
+
+- store_controverial_good(): returns top 5 most controversial games with the biggest 
+positive gaps between critic score and user score
+
+- store_controverial_bad(): returns top 5 most controversial games with the biggest 
+negative gaps between critic score and user score
+## 3. Loading Data and Sending Email (```email_data.py```)
+The main script ```scraper.py``` sends an email to a specified email address, and also saves data in a csv file. 
+
+```email_data.py``` script is in charge of sending an email, and for that it uses smtplib. Please be advised that **it only works with GMAIL** 
 
 
 
