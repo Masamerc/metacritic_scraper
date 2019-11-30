@@ -36,6 +36,10 @@ If you don't have conda set up, ere are the required packages
   - numpy
   - pandas
 ```
+Or install these packages with requirements.txt file.
+```
+pip install -r /path/to/requirements.txt
+```
 <br>
 
 ### 2. Set up the environment variables
