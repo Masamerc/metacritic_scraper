@@ -2,12 +2,16 @@ import smtplib
 from email.message import EmailMessage 
 import os
 
-def send_email(subject, content):
-  login_pass = os.environ.get("GMAILPASS")
+def send_email(subject, content, to_address):
+  """
+  set parameters required for sending email
+  """
+
   login_email = os.environ.get("GMAIL")
+  login_pass = os.environ.get("GMAILPASS")
   msg = EmailMessage()
   msg['From'] = login_email
-  msg['To'] = "fkmkfkmasum41@gmail.com"
+  msg['To'] = to_address
   msg['Subject'] = subject
   msg.set_content(content)
 
