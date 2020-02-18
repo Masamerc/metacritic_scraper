@@ -1,8 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-from data_wrangler import DataHelper
-from email_data import send_email
+from scripts import DataHelper, send_email
 import datetime 
 
 url = 'https://www.metacritic.com/browse/games/release-date/available/ps4/date'
@@ -37,7 +36,7 @@ with open("data.json", "w") as f:
      json.dump(game_data, f, indent=2)
 
 # create an instance of DataHelper 
-dh = DataHelper
+dh = DataHelper()
 
 # perform operations of DataHelper 
 test_data = dh.load_and_clean()
@@ -49,9 +48,10 @@ contr_good = dh.store_controverial_good(complete_data)
 contr_bad = dh.store_controverial_bad(complete_data)
 
 
-
 # prompt the user to put email address to send email to
-to_address = input("Please enter the email address to send this email to:  ")
+from_address = input("Sender's Email address: ")
+from_password = input("Sender's password: ")
+to_address = input("Email address to send this email to:  ")
 
-send_email(subject=f"Metacritic Scraper {datetime.date.today()}", content=o_best + "\n" + u_best\
+send_email(from_address, from_password, subject=f"Metacritic Scraper {datetime.date.today()}", content=o_best + "\n" + u_best\
           + "\n" + c_best + "\n" + contr_good + "\n" + contr_bad, to_address=to_address)

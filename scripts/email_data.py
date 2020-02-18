@@ -2,13 +2,13 @@ import smtplib
 from email.message import EmailMessage 
 import os
 
-def send_email(subject, content, to_address):
+def send_email(sender_address, sender_password, subject, content, to_address):
   """
   set parameters required for sending email
   """
 
-  login_email = os.environ.get("GMAIL")
-  login_pass = os.environ.get("GMAILPASS")
+  login_email = sender_address
+  login_pass = sender_password
   msg = EmailMessage()
   msg['From'] = login_email
   msg['To'] = to_address
@@ -21,7 +21,7 @@ def send_email(subject, content, to_address):
     smtp.login(login_email, login_pass)
     smtp.send_message(msg)
     print(f"""
-      message sent to {msg['To']}
+      email sent to {msg['To']}
       """)
 
 

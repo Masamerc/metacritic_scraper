@@ -2,9 +2,11 @@
 
 A web-scraping project which aims to scrape game score data from [metacritic.com](https://www.metacritic.com/), perform ETL and show some statistics about game scores.
 
-![](ms_logo.png)
+![](/assets/ms_logo.png)
 
 For this project, the goal is to collect data on [upcoming & recently released PS4 games](https://www.metacritic.com/browse/games/release-date/available/ps4/date). 
+
+You can use docker to run the program as well. [Run with Docker](#Run-with-Docker🐋)
 
 
 This project can be divided into 3 sections. 
@@ -12,7 +14,7 @@ This project can be divided into 3 sections.
 2. cleaning and transforming the data using Pandas
 3. sending an email (Gmail) with some statistics derived from the data / save data as csv
 
-<br>*SAMPLE EMAIL CAN BE FOUND IN **sample_email.txt**
+<br>*SAMPLE EMAIL CAN BE FOUND HERE [HERE](assets/sample_email.txt)
 
 <br>
 
@@ -21,53 +23,18 @@ This project can be divided into 3 sections.
 
 ### 1. Set up the environment
 
-First, install required packages or create a virtual enviroment using conda and ```environ.yaml``` file
-
+First, install required packages or create a virtual enviroment or install these packages with requirements.txt file.
 ```
-$ conda env create -f environ.yaml 
-```
-Then you can just run ```conda activate``` to activate the environment
-```
-$ conda activate meta-scraper
-```
-If you don't have conda set up, ere are the required packages
-```
-  - beautifulsoup4
-  - numpy
-  - pandas
-```
-Or install these packages with requirements.txt file.
-```
-pip install -r /path/to/requirements.txt
+pip install -r requirements.txt
 ```
 <br>
 
 ### 2. Set up the environment variables
-To send an email using Gmail, you need to set up:
-- **GMAIL**: email to send emails from
-- **GMAILPASS**: password for the gmail accout
+To send an email using Gmail, you need to either:
+- Create a new Gmail account and allow "Less Secure Apps" in settings
+- Or allow "Less Secure Apps" in settings for your existing Gmail account
 
-```email_data.py``` script uses environment variables "GMAIL" and "GMAILPASS".
-Here is a [guide](https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html) to set those variables on your machine.
-
-Or alternatively, you can **hardcode** your gmail and password directly in the ```email_data.py``` script. 
-
-```python
-def send_email(subject, content, to_address):
-  """
-  set parameters required for sending email
-  """
-# you can change the values here for login_email and login_pass 
-  login_email = os.environ.get("GMAIL")
-  login_pass = os.environ.get("GMAILPASS")
-  msg = EmailMessage()
-  msg['From'] = login_email
-  msg['To'] = to_address
-  msg['Subject'] = subject
-  msg.set_content(content)
-```
-
-
+[Here](https://hotter.io/docs/email-accounts/secure-app-gmail/)'s a guide for doing so. 
 
 <br>
 
@@ -122,5 +89,33 @@ The main script ```scraper.py``` sends an email to a specified email address, an
 
 ```email_data.py``` script is in charge of sending an email, and for that it uses smtplib. Please be advised that **it only works with GMAIL** 
 
+<br>
+
+---
+
+### Run with Docker🐋
+
+1. Build a docker container with the supplied Dockerfile. You can name the container whatever you want. 
+
+```docker
+# Dockerfile
+
+FROM python:latest
+
+COPY . /user/src/app
+WORKDIR /user/src/app
+
+RUN pip install -r requirements.txt
+
+CMD python scraper.py
+```
+```
+$ docker build . -t CONTAINER_NAME
+```
+
+2. Run the container like so: (make sure you use the "-it" tag since it you have to type in some credentials interactively during the execution of script)
+```
+$ docker run -it CONTAINER_NAME
+```
 
 
