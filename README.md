@@ -100,12 +100,12 @@ The main script ```scraper.py``` sends an email to a specified email address, an
 ```docker
 # Dockerfile
 
-FROM python:latest
+FROM python:3.7-slim
 
 COPY . /user/src/app
 WORKDIR /user/src/app
 
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 CMD python scraper.py
 ```
